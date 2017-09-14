@@ -4,6 +4,7 @@ html{
 *{
 	margin: 0;
 	padding: 0;
+	border: 1px solid limegreen;
 }
 img{
 	display: block;
@@ -20,8 +21,32 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 .wrapper{
-	max-width: 1170px;
+	width: 60%;
+	max-width: 1140px;
 	margin: 0 auto;
+}
+.title{
+	position: relative;
+	&::before{
+		content: '';
+		width: 30px;
+		height: 3px;
+		background: $mainBlue;
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&::after{
+		content: '';
+		width: 30px;
+		height: 3px;
+		background: $mainRed;
+		position: absolute;
+		bottom: -15px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }
 .screenReader{
 	position: absolute !important;
