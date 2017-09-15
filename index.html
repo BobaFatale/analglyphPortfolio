@@ -6,32 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet"><link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="public/styles/style.css"/>
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="#"><span class="nav__logo"></span>June Epstein</a>
-			<ul class="nav__links">
-				<li class="nav__link"><a href="">Home</a></li>
-				<li class="nav__link"><a href="">Works</a></li>
-				<li class="nav__link"><a href="">About</a></li>
-				<li class="nav__link"><a href="">Skills</a></li>
-				<li class="nav__link"><a href="">Contact</a></li>
-			</ul>
-		</nav>
 		<div class="wrapper">
+			<nav>
+				<a href="#"><span class="nav__logo"></span>June Epstein</a>
+				<ul class="nav__links">
+					<li class="nav__link"><a href="">Home</a></li>
+					<li class="nav__link"><a href="">Works</a></li>
+					<li class="nav__link"><a href="">About</a></li>
+					<li class="nav__link"><a href="">Skills</a></li>
+					<li class="nav__link"><a href="">Contact</a></li>
+				</ul>
+			</nav>
 			<div class="splash">
 				<h1>June Epstein</h1>
 				<h2>Web Developer</h2>
 			</div><!-- splash -->
-		</div>
-		<div class="splash__button">
-			<button>Scroll Down</button>
-			<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			<p>and put on your glasses</p>
-		</div><!-- splash__button -->
+			<div class="splash__button">
+				<button>Scroll Down</button>
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+				<p>and put on your glasses</p>
+			</div><!-- splash__button -->
+		</div><!-- wrapper -->
 	</header>
 	<section class="about">
 		<div class="wrapper">
@@ -50,13 +51,12 @@
 							<li class="profile__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i  class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 							<li class="profile__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 						</ul>
-					</div>
-				</div>
+					</div><!-- profile__title -->
+				</div><!-- profile__headshot -->
 				<div class="profile__text">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi molestiae itaque sed officiis ratione nihil, fugiat dicta autem aliquid mollitia commodi animi quidem vel libero quam fugit a deleniti laboriosam nam quisquam? Adipisci at hic dicta quaerat numquam autem expedita blanditiis quod molestiae, consectetur reiciendis rerum obcaecati, quos facilis.</p>
-				</div>
-
-			</div>
+				</div><!-- profile__text -->
+			</div><!-- about__profile -->
 		</div><!-- wrapper -->
 	</section><!-- about -->
 	<section class="skills">
@@ -87,8 +87,8 @@
 					<p>HTML5</p>
 				</li>
 				<li class="skills__skill">
-					<i class="devicon-heroku-original"></i>
-					<p>Heroku</p>
+					<i class="devicons devicons-firebase"></i>
+					<p>Firebase</p>
 				</li>
 				<li class="skills__skill">
 					<i class="devicon-javascript-plain"></i>
@@ -110,9 +110,235 @@
 					<i class="devicon-sass-original"></i>
 					<p>Sass</p>
 				</li>
+				<li class="skills_skill">
+					<i class="devicons devicons-sublime" alt="icon for Sublime Text"></i>
+					<p>Sublime</p>
+				</li>
 			</ul>
 		</div><!-- wrapper -->
 	</section><!-- skills -->
+	<section class="portfolio">
+		<div class="wrapper">
+			<div class="portfolio__title title">
+				<h3>My work</h3>
+				<h4>What I have done so far</h4>
+			</div><!-- portfolio__title -->
+			<ul class="portfolio__list">
+				<li class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="" alt="">
+						<ul class="portfolio__links">
+							<li class="portfolio__link portfolio__link--live"><a href="">View Live</a></li>
+							<li class="portfolio__link portfolio__link--github"><a href="">View on GitHub</a></li>
+						</ul>
+					</div><!-- portfolio__image -->
+					<div class="portfolio__description">
+						<h4>Full Stack React App - Avocado Timer</h4>
+						<ul class="portfolio__tools">
+							<li class="portfolio__tool">
+								<p>React</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Node.js</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Firebase</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Heroku</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Javascript</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Sass</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Gulp</p>
+							</li>
+						</ul>
+						<p></p>
+					</div><!-- portfolio__description -->
+				</li><!-- portfolio__item -->
+				<li class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="" alt="">
+						<ul class="portfolio__links">
+							<li class="portfolio__link portfolio__link--live"><a href="">View Live</a></li>
+							<li class="portfolio__link portfolio__link--github"><a href="">View on GitHub</a></li>
+						</ul>
+					</div><!-- portfolio__image -->
+					<div class="portfolio__description">
+						<h4>jQuery App - Nom deRBY</h4>
+						<ul class="portfolio__tools">
+							<li class="portfolio__tool">
+								<p>JavaScript</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>jQuery</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Sass</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>CSS3</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>HTML5</p>
+							</li>
+						</ul>
+						<p></p>
+					</div><!-- portfolio__description -->
+				</li><!-- portfolio__item -->
+				<li class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="" alt="">
+						<ul class="portfolio__links">
+							<li class="portfolio__link portfolio__link--live"><a href="">View Live</a></li>
+							<li class="portfolio__link portfolio__link--github"><a href="">View on GitHub</a></li>
+						</ul>
+					</div><!-- portfolio__image -->
+					<div class="portfolio__description">
+						<h4>ISS in the Sky</h4>
+						<ul class="portfolio__tools">
+							<li class="portfolio__tool">
+								<p>JavaScript</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>jQuery</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Sass</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>CSS3</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>HTML5</p>
+							</li>
+						</ul>
+						<p></p>
+					</div><!-- portfolio__description -->
+				</li><!-- portfolio__item -->
+				<li class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="" alt="">
+						<ul class="portfolio__links">
+							<li class="portfolio__link portfolio__link--live"><a href="">View Live</a></li>
+							<li class="portfolio__link portfolio__link--github"><a href="">View on GitHub</a></li>
+						</ul>
+					</div><!-- portfolio__image -->
+					<div class="portfolio__description">
+						<h4>PSD Converstion - Soundbyte</h4>
+						<ul class="portfolio__tools">
+							<li class="portfolio__tool">
+								<p>HTML5</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>CSS3</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Sass</p>
+							</li>
+						</ul>
+						<p></p>
+					</div><!-- portfolio__description -->
+				</li><!-- portfolio__item -->
+				<li class="portfolio__item">
+					<div class="portfolio__image">
+						<img src="" alt="">
+						<ul class="portfolio__links">
+							<li class="portfolio__link portfolio__link--live"><a href="">View Live</a></li>
+							<li class="portfolio__link portfolio__link--github"><a href="">View on GitHub</a></li>
+						</ul>
+					</div><!-- portfolio__image -->
+					<div class="portfolio__description">
+						<h4>Too Spicy For Work</h4>
+						<ul class="portfolio__tools">
+							<li class="portfolio__tool">
+								<p>JavaScript</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>jQuery</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>GitHub</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Gulp</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>Sass</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>HTML5</p>
+							</li>
+							<li class="portfolio__tool">
+								<p>CSS3</p>
+							</li>
+						</ul>
+						<p></p>
+					</div><!-- portfolio__description -->
+				</li><!-- portfolio__item -->
+			</ul><!-- portfolio__list -->
+		</div><!-- wrapper -->
+	</section><!-- portfolio -->
+	<section class="contact">
+		<div class="wrapper">
+			<div class="contact__title title">
+				<h3>Contact Me</h3>
+				<h4>Questions or just want to say Hello? Always happy to hear from you!</h4>
+			</div><!-- contact__title -->
+			<div class="contact__info">
+				<div class="contact__email">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<p>get@juneepstein.com</p>
+				</div>
+				<ul class="contact__links">
+					<li class="contact__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li class="contact__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i  class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li class="contact__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="contact__form">
+				<form method="POST" action="http://www.focuspocus.io/magic/5d0fc1006a0adc29a17f7b43bc0f6ece">
+					<ul class="form__list">
+						<li class="form__item">
+							<label for="" class="screenReader"></label>
+							<input type="text">
+						</li>
+						<li class="form__item">
+							<label for="" class="screenReader"></label>
+							<input type="text">
+						</li>
+						<li class="form__item">
+							<label for="" class="screenReader"></label>
+							<textarea name="" id=""></textarea>
+						</li>
+						<li class="form__item">
+							<label for="" class="">Worried about spam? Me too!</label>
+							<button>Send it!</button>
+						</li>
+					</ul><!-- form__list -->
+				</form>
+			</div>
+		</div><!-- wrapper -->
+	</section><!-- contact -->
+	<footer class="copyright">
+		<div class="wrapper">
+			<div class="copyright__text">
+				<p><i class="fa fa-copyright"></i>2017 June Epstein</p>
+				<p>Design: <i class="fa fa-copyright"></i>Theme Starz</p>
+				<p>Photography: Pam Lau <a href="https://twitter.com/pamlau">@pamlau</a></p>
+			</div><!-- copyright__text -->
+			<ul class="copyright__links">
+				<li class="copyright__link"><a href="emailto:get@juneepstein.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				<li class="copyright__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li class="copyright__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i  class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li class="copyright__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div><!-- wrapper -->
+	</footer>
 	<script type="text/javascript" src="public/scripts/script.js"></script>
 </body>
 </html>
