@@ -13,38 +13,44 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<nav>
-				<a href="#"><span class="nav__logo"></span>June Epstein</a>
-				<ul class="nav__links">
-					<li class="nav__link"><a href="">Home</a></li>
-					<li class="nav__link"><a href="">Works</a></li>
-					<li class="nav__link"><a href="">About</a></li>
-					<li class="nav__link"><a href="">Skills</a></li>
-					<li class="nav__link"><a href="">Contact</a></li>
-				</ul>
-			</nav>
 			<div class="splash">
-				<h1>June Epstein</h1>
-				<h2>Web Developer</h2>
+				<nav class="header__nav">
+					<div class="nav__title">
+						<div class="nav__logo logo">JE</div>
+						<a href="#">June Epstein</a>
+					</div>
+					<ul class="nav__links">
+						<li class="nav__link nav__link--active"><a href="">Home</a></li>
+						<li class="nav__link"><a href="">Works</a></li>
+						<li class="nav__link"><a href="">About</a></li>
+						<li class="nav__link"><a href="">Skills</a></li>
+						<li class="nav__link"><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="splash__text">
+					<div class="text__container">
+						<h1>June Epstein</h1>
+					</div>
+				</div><!-- splash__text -->
+				<div class="splash__button">
+					<button>Scroll Down</button>
+					<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					<p>and put on your glasses</p>
+				</div><!-- splash__button -->
 			</div><!-- splash -->
-			<div class="splash__button">
-				<button>Scroll Down</button>
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-				<p>and put on your glasses</p>
-			</div><!-- splash__button -->
 		</div><!-- wrapper -->
 	</header>
 	<section class="about">
 		<div class="wrapper">
 			<div class="about__title title">
-				<h3>About Me</h3>
-				<h4>Why I am awesome</h4>
+				<h2>About Me</h2>
+				<h3>Why I am awesome</h3>
 			</div><!-- about__title -->
 			<div class="about__profile">
 				<div class="profile__headshot">
 					<img src="assets/portraitSquare.jpg" alt="A headshot of June Epstein. She is wearing a black and white plaid shirt and is sitting on a red chair.">
 					<div class="profile__title title">
-						<h5>June Epstein</h5>
+						<h4>June Epstein</h4>
 						<ul class="profile__links">
 							<li class="profile__link"><a href="emailto:get@juneepstein.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
 							<li class="profile__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -62,8 +68,8 @@
 	<section class="skills">
 		<div class="wrapper">
 			<div class="skills__title">
-				<h3>Skills &amp; Tools</h3>
-				<h4>These are the things I know, I know</h4>
+				<h2>Skills &amp; Tools</h2>
+				<h3>These are the things I know, I know</h3>
 			</div><!-- skills__title -->
 			<ul class="skills__list">
 				<li class="skills__skill">
@@ -120,8 +126,8 @@
 	<section class="portfolio">
 		<div class="wrapper">
 			<div class="portfolio__title title">
-				<h3>My work</h3>
-				<h4>What I have done so far</h4>
+				<h2>My work</h2>
+				<h3>What I have done so far</h3>
 			</div><!-- portfolio__title -->
 			<ul class="portfolio__list">
 				<li class="portfolio__item">
@@ -286,7 +292,7 @@
 	<section class="contact">
 		<div class="wrapper">
 			<div class="contact__title title">
-				<h3>Contact Me</h3>
+				<h2>Contact Me</h2>
 				<h4>Questions or just want to say Hello? Always happy to hear from you!</h4>
 			</div><!-- contact__title -->
 			<div class="contact__info">
@@ -339,6 +345,6 @@
 			</ul>
 		</div><!-- wrapper -->
 	</footer>
-	<script type="text/javascript" src="public/scripts/script.js"></script>
+	<!-- <script type="text/javascript" src="public/scripts/script.js"></script> -->
 </body>
 </html>

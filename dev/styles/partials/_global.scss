@@ -24,6 +24,16 @@ body{
 	max-width: 1140px;
 	margin: 0 auto;
 }
+.screenReader{
+	position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .title{
 	position: relative;
 	&::before{
@@ -47,13 +57,23 @@ body{
 		transform: translateX(-50%);
 	}
 }
-.screenReader{
-	position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+.logo{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #2B2A2A;
+	box-shadow: -3px 0 rgba(255,0,0,0.8), 3px 0 rgba(0,255,255,0.8);
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	color:white;
+	font-weight: 700;
+	font-size: 1.6rem;
+	letter-spacing: -3px;
+	line-height: 1;
+	text-shadow: -3px 0 rgba(255,0,0,0.8), 3px 0 rgba(0,255,255,0.8);
 }
