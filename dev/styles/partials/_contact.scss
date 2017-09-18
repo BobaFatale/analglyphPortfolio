@@ -1,5 +1,6 @@
 .contact{
 	background: rgb(20, 20, 20);
+	padding-bottom: 35px;
 }
 .contact__title{
 	h2{
@@ -14,7 +15,7 @@
 	flex-wrap: wrap;
 }
 .contact__info{
-	width: 25%;
+	width: 30%;
 	
 	display: flex;
 	flex-direction: column;
@@ -41,10 +42,13 @@
 		line-height: 24px;/* Approximation due to font substitution */
 		text-align: left;
 		text-decoration: none;
+		&:hover{
+			color: $mainBlue;
+		}
 	}
 }
 .contact__form{
-	width: 75%;
+	width: 70%;
 	input,textarea{
 		padding: 25px 20px;
 		font-size: 1.8rem;
@@ -75,4 +79,26 @@
 		width: calc( ( 100% - 30px)/2);
 		
 	} 
+}
+.form__button{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	p{
+		color:rgba(255, 255, 255, 0.7);
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+	button{
+		padding: 15px 25px;
+		color:rgba(255, 255, 255, 0.7);
+		font-size: 1.8rem;
+		font-weight: 600;
+		text-align: center;
+		background: $mainRed;
+		text-transform: uppercase;
+	}
 }

@@ -11,13 +11,13 @@
 	<link rel="stylesheet" href="public/styles/style.css"/>
 </head>
 <body>
-	<header>
+	<header id="splash">
 		<div class="wrapper">
 			<div class="splash">
 				<nav class="header__nav">
 					<div class="nav__title">
 						<div class="nav__logo logo">JE</div>
-						<a href="#">June Epstein</a>
+						<a href="#splash">June Epstein</a>
 					</div>
 					<ul class="nav__links">
 						<li class="nav__link nav__link--active"><a href="">Home</a></li>
@@ -68,7 +68,7 @@
 			</div><!-- about__profile -->
 		</div><!-- wrapper -->
 	</section><!-- about -->
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="wrapper">
 			<div class="portfolio__title title">
 				<h2>My work</h2>
@@ -260,7 +260,7 @@
 			</ul><!-- portfolio__list -->
 		</div><!-- wrapper -->
 	</section><!-- portfolio -->
-	<section class="skills">
+	<section class="skills" id="skills">
 		<div class="wrapper">
 			<div class="skills__title title">
 				<h2>Skills &amp; Tools</h2>
@@ -321,7 +321,7 @@
 			</ul>
 		</div><!-- wrapper -->
 	</section><!-- skills -->
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="wrapper">
 			<div class="contact__title title">
 				<h2>Contact Me</h2>
@@ -348,12 +348,12 @@
 								<label for="" class="screenReader">enter your email</label>
 								<input type="text" placeholder="Email" required>
 							</li>
-							<li class="form__item">
+							<li class="form__message">
 								<label for="form__message" class="screenReader">Enter your message</label>
 								<textarea name="message" id="form__message" placeholder="Message" rows="7"></textarea>
 							</li>
-							<li class="form__item">
-								<label for="" class="">Worried about spam? Me too!</label>
+							<li class="form__button">
+								<p>Worried about spam? Me too!</p>
 								<button>Send it!</button>
 							</li>
 						</ul><!-- form__list -->
@@ -363,7 +363,7 @@
 		</div><!-- wrapper -->
 	</section><!-- contact -->
 	<footer class="copyright">
-		<div class="wrapper">
+		<div class="copyright__container wrapper">
 			<div class="copyright__text">
 				<p><i class="fa fa-copyright"></i>2017 June Epstein</p>
 				<p>Design: <i class="fa fa-copyright"></i>Theme Starz</p>
@@ -374,9 +374,12 @@
 				<li class="copyright__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				<li class="copyright__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i  class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 				<li class="copyright__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li class="copyright__link">
+					<a href="#" class="foot__logo logo">JE</a>
+				</li>
 			</ul>
 		</div><!-- wrapper -->
 	</footer>
-	<!-- <script type="text/javascript" src="public/scripts/script.js"></script> -->
+	<script type="text/javascript" src="public/scripts/script.js"></script>
 </body>
 </html>
