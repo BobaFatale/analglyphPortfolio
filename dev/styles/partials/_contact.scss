@@ -1,0 +1,78 @@
+.contact{
+	background: rgb(20, 20, 20);
+}
+.contact__title{
+	h2{
+		color: white;
+	}
+}
+.contact__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.contact__info{
+	width: 25%;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.contact__link{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	i{
+		font-size: 2.4rem;
+		color: rgb(144, 141, 136);
+		margin-right: 20px;
+	}
+	a{
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 24px;/* Approximation due to font substitution */
+		text-align: left;
+		text-decoration: none;
+	}
+}
+.contact__form{
+	width: 75%;
+	input,textarea{
+		padding: 25px 20px;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 30px;/* Approximation due to font substitution */
+		text-align: left;
+		color: rgba(255, 255, 255, 1);
+		border: 3px solid rgba(55, 55, 55, 1);
+		background-color: rgba(0, 0, 0, 0.3);
+		@include inputPlaceholder() {
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+	textarea{
+		width: 100%;
+		resize: none;
+	}
+}
+.form__nameEmail{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	input{
+		display: block;
+		width: calc( ( 100% - 30px)/2);
+		
+	} 
+}
