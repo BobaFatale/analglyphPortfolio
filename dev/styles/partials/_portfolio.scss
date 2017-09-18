@@ -14,12 +14,21 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 30px;
 	&:nth-of-type(odd) .portfolio__description{
 		order: -1;
+		text-align: left;
+		.portfolio__tools{
+			justify-content: flex-start;
+		}
 	}
 }
-.portfolio__image, .portfolio__description{
-	width: calc( ( 100% - 50px ) / 2);
+.portfolio__image{
+	// width: calc( ( 100% - 50px ) / 2);
+	width: calc(55% - 30px);
+}
+.portfolio__description{
+	width: 45%;
 }
 
 .portfolio__links{
@@ -37,26 +46,27 @@
 	align-items: center;
 	flex-wrap: wrap;
 	a{
-		color: rgba(255, 255, 255, 0.25);
 		font-size: 1.4rem;
 		font-weight: 500;
 		line-height: 24px;/* Approximation due to font substitution */
 		padding: 10px 15px;
-		border: 2px solid rgba(255, 255, 255, 0.25);
 		text-transform: uppercase;
 		text-decoration: none;
-		&:hover{
-			border: 2px solid rgba(255, 255, 255, 1);
-			color: rgba(255, 255, 255, 1);
-		}
+		
 	}
 	&:first-of-type{
 		margin-right: 25px;
 		a{
+			color: white;
+			border: 2px solid white;
 			border-right: 2px solid rgb(0, 255, 255);
 			border-left: 2px solid rgb(255,0,0);
-			box-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,255,255,0.8);
+			box-shadow: 4px 0 rgba(255,0,0,0.8), -4px 0 rgba(0,255,255,0.8);
 			&:hover{
+				border-top:rgb(42, 42, 42);
+				border-bottom:rgb(42, 42, 42);
+				color: rgb(42, 42, 42);
+				background: white;
 				box-shadow: none;
 			}
 		}
@@ -64,8 +74,53 @@
 	&:last-of-type{
 		margin-left: 25px;
 		a{
-			
+			border: 2px solid rgba(255, 255, 255, 0.25);
+			color: rgba(255, 255, 255, 0.25);
+			&:hover{
+				border: 2px solid rgba(255, 255, 255, 1);
+				color: rgba(255, 255, 255, 1);
+			}
 		}
 	}
-	
+}
+.portfolio__description{
+	text-align: right;
+	h4{
+		color: rgba(255, 255, 255, 1);
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 30px;/* Approximation due to font substitution */
+		text-transform: uppercase;
+	}
+}
+.portfolio__tools{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 30px;
+	color: white;
+}
+.portfolio__tool{
+	border: 2px solid rgb(183, 183, 183);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0 10px;
+	&:first-of-type{
+		margin-left: 0;
+	}
+	&:last-of-type{
+		margin-right: 0;
+	}
+}
+.portfolio__text{
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	color: rgb(183, 183, 183);
 }
