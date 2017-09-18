@@ -22,24 +22,55 @@
 	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	@include respond-to("large") {
+		width: 100%;
+		flex-direction: row;
+	}
+}
+.contact__links{
+	width: 100%;
+	@include respond-to("large") {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	@include respond-to("medium") {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 70%;
+		margin: 0 auto;
+	}
+	@include respond-to("small") {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
 }
 .contact__link{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+	@include respond-to("small") {
+		justify-content: center;
+	}
 	i{
 		font-size: 2.4rem;
 		color: rgb(144, 141, 136);
 		margin-right: 20px;
+		@include respond-to("large") {
+			margin-right: 10px;
+		}
 	}
 	a{
 		color: rgba(255, 255, 255, 0.8);
 		font-size: 1.8rem;
 		font-weight: 700;
-		line-height: 24px;/* Approximation due to font substitution */
+		// line-height: 24px;/* Approximation due to font substitution */
 		text-align: left;
 		text-decoration: none;
 		&:hover{
@@ -49,6 +80,9 @@
 }
 .contact__form{
 	width: 70%;
+	@include respond-to("medium") {
+		width: 90%;
+	}
 	input,textarea{
 		padding: 25px 20px;
 		font-size: 1.8rem;
@@ -74,10 +108,15 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
+	@include respond-to("small") {
+		display: block;
+	}
 	input{
 		display: block;
 		width: calc( ( 100% - 30px)/2);
-		
+		@include respond-to("small") {
+			width: 100%;
+		}
 	} 
 }
 .form__button{
@@ -94,11 +133,16 @@
 	}
 	button{
 		padding: 15px 25px;
+		border: none;
 		color:rgba(255, 255, 255, 0.7);
 		font-size: 1.8rem;
 		font-weight: 600;
 		text-align: center;
 		background: $mainRed;
 		text-transform: uppercase;
+		&:hover{
+			background:rgba(255, 255, 255, 0.7);
+			color: $mainRed;
+		}
 	}
 }

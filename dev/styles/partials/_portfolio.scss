@@ -12,23 +12,46 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
-	&:nth-of-type(odd) .portfolio__description{
-		order: -1;
-		text-align: left;
-		.portfolio__tools{
-			justify-content: flex-start;
+	@include respond-to("large") {
+		flex-direction: column;
+		justify-content: center;
+	}
+	&:nth-of-type(odd){
+		@include respond-to("large") {
+			align-items: flex-start;
+		}
+		.portfolio__links{
+			@include respond-to("large") {
+				justify-content: flex-end;
+			}
+		}
+		.portfolio__description{
+			order: -1;
+			text-align: left;
+			@include respond-to("large") {
+				order: 0;
+			}
+			.portfolio__tools{
+				justify-content: flex-start;
+			}
 		}
 	}
 }
 .portfolio__image{
 	// width: calc( ( 100% - 50px ) / 2);
 	width: calc(55% - 30px);
+	@include respond-to("large") {
+		width: 100%;
+	}
 }
 .portfolio__description{
 	width: 45%;
+	@include respond-to("large") {
+		width: 75%;
+	}
 }
 
 .portfolio__links{
@@ -38,6 +61,9 @@
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 10px 0;
+	@include respond-to("large") {
+		justify-content: flex-start;
+	}
 }
 .portfolio__link{
 	display: flex;

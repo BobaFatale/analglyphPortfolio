@@ -8,6 +8,14 @@
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-column-gap: 40px;
 	grid-row-gap: 40px;
+	@include respond-to("medium") {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	@include respond-to("small") {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
 }
 .skills__skill{
 	color:black;

@@ -30,7 +30,7 @@
     }
   }
 }
-// borrowed from https://gist.github.com/mturnwall/9e055b89b374bb429947
+// adds all prefixes to properly style the placeholder attribute of inputs and add all the relevant browser prefixes borrowed from https://gist.github.com/mturnwall/9e055b89b374bb429947 
 @mixin inputPlaceholder() {
     $selector: '';
     $prefixes: (

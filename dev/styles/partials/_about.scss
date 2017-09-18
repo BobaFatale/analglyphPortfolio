@@ -1,11 +1,12 @@
 .about__profile{
-
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	@include respond-to("medium") {
+		flex-direction: column;
+	}
 
 	figure{
 		position: relative;
@@ -27,7 +28,6 @@
 .profile__headshot, .profile__text{
 	width: calc( ( 100% - 50px )/2 );
 }
-
 .profile__links{
 	background: rgb(21, 21, 21);
 	padding: 25px 20px;
@@ -66,6 +66,9 @@
 	line-height: 30px;/* Approximation due to font substitution */
 	text-align: left;
 	color: rgb(183, 183, 183);
+	@include respond-to("medium") {
+		width: 80%;
+	}
 	p:first-of-type{
 		font-weight: 700;
 		color: rgb(37, 37, 37);
