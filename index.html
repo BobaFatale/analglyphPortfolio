@@ -21,10 +21,10 @@
 					</div>
 					<ul class="nav__links">
 						<li class="nav__link nav__link--active"><a href="">Home</a></li>
-						<li class="nav__link"><a href="">Works</a></li>
-						<li class="nav__link"><a href="">About</a></li>
-						<li class="nav__link"><a href="">Skills</a></li>
-						<li class="nav__link"><a href="">Contact</a></li>
+						<li class="nav__link"><a href="#portfolio">Works</a></li>
+						<li class="nav__link"><a href="#about">About</a></li>
+						<li class="nav__link"><a href="#skills">Skills</a></li>
+						<li class="nav__link"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 				<div class="splash__text">
@@ -40,7 +40,7 @@
 			</div><!-- splash -->
 		</div><!-- wrapper -->
 	</header>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="wrapper">
 			<div class="about__title title">
 				<h2>About Me</h2>
@@ -48,16 +48,18 @@
 			</div><!-- about__title -->
 			<div class="about__profile">
 				<div class="profile__headshot">
-					<img src="assets/portraitSquare.jpg" alt="A headshot of June Epstein. She is wearing a black and white plaid shirt and is sitting on a red chair.">
-					<div class="profile__title title">
-						<h4>June Epstein</h4>
-						<ul class="profile__links">
-							<li class="profile__link"><a href="emailto:get@juneepstein.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-							<li class="profile__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-							<li class="profile__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i  class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li class="profile__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						</ul>
-					</div><!-- profile__title -->
+					<figure>
+						<img src="assets/portraitSquareAG.jpg" alt="An analglyph version of a headshot of June Epstein.">
+						<figcaption>
+							<img src="assets/portraitSquare.jpg" alt="A headshot of June Epstein. She is wearing a black and white plaid shirt and is sitting on a red chair.">
+							<ul class="profile__links">
+								<li class="profile__link"><a href="emailto:get@juneepstein.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a></li>
+								<li class="profile__link"><a href="https://github.com/BobaFatale/"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></li>
+								<li class="profile__link"><a href="https://www.linkedin.com/in/june-epstein-36b041b2/"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+								<li class="profile__link"><a href="http://www.twitter.com/TheJuneEpstein"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>
+							</ul>
+						</figcaption>
+					</figure>
 				</div><!-- profile__headshot -->
 				<div class="profile__text">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi molestiae itaque sed officiis ratione nihil, fugiat dicta autem aliquid mollitia commodi animi quidem vel libero quam fugit a deleniti laboriosam nam quisquam? Adipisci at hic dicta quaerat numquam autem expedita blanditiis quod molestiae, consectetur reiciendis rerum obcaecati, quos facilis.</p>
@@ -65,64 +67,6 @@
 			</div><!-- about__profile -->
 		</div><!-- wrapper -->
 	</section><!-- about -->
-	<section class="skills">
-		<div class="wrapper">
-			<div class="skills__title">
-				<h2>Skills &amp; Tools</h2>
-				<h3>These are the things I know, I know</h3>
-			</div><!-- skills__title -->
-			<ul class="skills__list">
-				<li class="skills__skill">
-					<i class="devicon-css3-plain"></i>
-					<p>CSS3</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-git-plain"></i>
-					<p>git</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-github-plain"></i>
-					<p>GitHub</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-gulp-plain"></i>
-					<p>Gulp</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-html5-plain"></i>
-					<p>HTML5</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicons devicons-firebase"></i>
-					<p>Firebase</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-javascript-plain"></i>
-					<p>Javascript</p>
-				</li>
-				<li class="skills__skill">
-					 <i class="devicon-jquery-plain"></i>
-					<p>jQuery</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-nodejs-plain"></i>
-					<p>nodejs</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-react-original"></i>
-					<p>React</p>
-				</li>
-				<li class="skills__skill">
-					<i class="devicon-sass-original"></i>
-					<p>Sass</p>
-				</li>
-				<li class="skills_skill">
-					<i class="devicons devicons-sublime" alt="icon for Sublime Text"></i>
-					<p>Sublime</p>
-				</li>
-			</ul>
-		</div><!-- wrapper -->
-	</section><!-- skills -->
 	<section class="portfolio">
 		<div class="wrapper">
 			<div class="portfolio__title title">
@@ -289,11 +233,69 @@
 			</ul><!-- portfolio__list -->
 		</div><!-- wrapper -->
 	</section><!-- portfolio -->
+	<section class="skills">
+		<div class="wrapper">
+			<div class="skills__title title">
+				<h2>Skills &amp; Tools</h2>
+				<h3>These are the things I know, I know</h3>
+			</div><!-- skills__title -->
+			<ul class="skills__list">
+				<li class="skills__skill">
+					<i class="devicon-css3-plain"></i>
+					<p>CSS3</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-git-plain"></i>
+					<p>git</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-github-plain"></i>
+					<p>GitHub</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-gulp-plain"></i>
+					<p>Gulp</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-html5-plain"></i>
+					<p>HTML5</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicons devicons-firebase"></i>
+					<p>Firebase</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-javascript-plain"></i>
+					<p>Javascript</p>
+				</li>
+				<li class="skills__skill">
+					 <i class="devicon-jquery-plain"></i>
+					<p>jQuery</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-nodejs-plain"></i>
+					<p>nodejs</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-react-original"></i>
+					<p>React</p>
+				</li>
+				<li class="skills__skill">
+					<i class="devicon-sass-original"></i>
+					<p>Sass</p>
+				</li>
+				<li class="skills_skill">
+					<i class="devicons devicons-sublime" alt="icon for Sublime Text"></i>
+					<p>Sublime</p>
+				</li>
+			</ul>
+		</div><!-- wrapper -->
+	</section><!-- skills -->
 	<section class="contact">
 		<div class="wrapper">
 			<div class="contact__title title">
 				<h2>Contact Me</h2>
-				<h4>Questions or just want to say Hello? Always happy to hear from you!</h4>
+				<h3>Questions or just want to say Hello? Always happy to hear from you!</h3>
 			</div><!-- contact__title -->
 			<div class="contact__info">
 				<div class="contact__email">
