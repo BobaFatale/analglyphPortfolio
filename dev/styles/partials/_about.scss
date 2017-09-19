@@ -28,6 +28,11 @@
 .profile__headshot, .profile__text{
 	width: calc( ( 100% - 50px )/2 );
 }
+.profile__headshot{
+	@include respond-to("medium") {
+		margin-bottom: 20px;
+	}
+}
 .profile__links{
 	background: rgb(21, 21, 21);
 	padding: 25px 20px;
@@ -39,9 +44,9 @@
 	flex-wrap: wrap;
 
 	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	right: 10px;
+	bottom: 30px;
+	left: 100px;
+	right: 100px;
 }
 .profile__link{
 	display: flex;

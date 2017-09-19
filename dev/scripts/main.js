@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+//smooth scroll code blatently stolen from https://css-tricks.com/snippets/jquery/smooth-scrolling/
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -36,7 +37,3 @@ $('a[href*="#"]')
       }
     }
   });
-
-const ohHey = "Hello World";
-
-console.log(ohHey);
