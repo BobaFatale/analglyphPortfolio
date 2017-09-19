@@ -60,6 +60,7 @@
 		border: 2px solid rgb(115, 113, 108);
 		padding: 10px;
 		color: rgb(115, 113, 108);
+		transition: all 0.3s ease-in;
 		&:hover{
 			border: 2px solid white;
 			color:white;

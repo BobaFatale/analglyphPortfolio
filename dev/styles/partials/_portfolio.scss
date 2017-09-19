@@ -54,6 +54,12 @@
 			margin-bottom: 10px;
 		}
 	}
+	img{
+		transition: all 0.3s ease-in;
+		&:hover{
+			box-shadow: -2px -2px $mainRed, 2px 2px $mainBlue;
+		}
+	}
 }
 .portfolio__description{
 	width: 45%;
@@ -89,7 +95,7 @@
 		padding: 10px 15px;
 		text-transform: uppercase;
 		text-decoration: none;
-		
+		transition: all 0.3s ease-in;
 	}
 	&:first-of-type{
 		margin-right: 25px;
@@ -113,6 +119,7 @@
 		a{
 			border: 2px solid rgba(255, 255, 255, 0.25);
 			color: rgba(255, 255, 255, 0.25);
+
 			&:hover{
 				border: 2px solid rgba(255, 255, 255, 1);
 				color: rgba(255, 255, 255, 1);
