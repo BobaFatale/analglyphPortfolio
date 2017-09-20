@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>June Epstein</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon64.png">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet"><link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
@@ -11,6 +12,28 @@
 	<link rel="stylesheet" href="public/styles/style.css"/>
 </head>
 <body>
+	<input type="checkbox" id="hamToggle" name="toggle">
+	<nav class="hamburgerNav">
+		<label for="hamToggle" class="hamburgerNav__label">
+			<div class="hamLabel__container">
+				<div class="hamburgerNav__icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<span class="screenReader">Navigation Menu</span>
+		</label>
+		<a href="#about" class="screenReader">Skip Navigation</a>
+		<ul class="hamLinks">
+			<li class="hamLinks__link"><a href="#splash">Home</a></li>
+			<li class="hamLinks__link"><a href="#portfolio">Works</a></li>
+			<li class="hamLinks__link"><a href="#about">About</a></li>
+			<li class="hamLinks__link"><a href="#skills">Skills</a></li>
+			<li class="hamLinks__link"><a href="#contact">Contact</a></li>
+		</ul><!-- navLinks -->
+	</nav><!-- hamburgerNav -->
 	<header id="splash">
 		<div class="wrapper">
 			<div class="splash">
@@ -49,7 +72,7 @@
 			<div class="about__profile">
 				<div class="profile__headshot">
 					<figure>
-						<img src="assets/portraitSquareAG.jpg" alt="An analglyph version of a headshot of June Epstein.">
+						<img src="assets/portraitSquareFilter.jpg" alt="An analglyph version of a headshot of June Epstein.">
 						<figcaption>
 							<img src="assets/portraitSquare.jpg" alt="A headshot of June Epstein. She is wearing a black and white plaid shirt and is sitting on a red chair.">
 							<ul class="profile__links">
@@ -62,8 +85,8 @@
 					</figure>
 				</div><!-- profile__headshot -->
 				<div class="profile__text">
-					<p>I am a Web Developer from Toronto, Ontario with a passion for collaboration and solving problems. After a decade working backstage in event production I felt that my career had stalled. That is when I attended HackerYou and begun my journey in code. I belive in the importance of accessible and readable code.</p>
-					<p>Outside of work you will find me in Toronto's many parks with my dog, or playing roller derby with the Smoke City Bandits.</p>
+					<p><em>I am a Web Developer from Toronto, Ontario</em> with a passion for collaboration and solving problems. After a decade working backstage in event production I attended HackerYou and begun my journey in code. Looking forward I aim to expand my knowledge in to full-stack development. <em>I believe in the importance of accessible and readable code.</em></p>
+					<p>Outside of work you will find me in Toronto's many parks with my dog, posting pictures of bats online, or playing roller derby with the Smoke City Bandits.</p>
 				</div><!-- profile__text -->
 			</div><!-- about__profile -->
 		</div><!-- wrapper -->
@@ -114,7 +137,7 @@
 								</li>
 							</ul>
 						</div>
-						<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil culpa molestiae officiis sint sapiente veritatis sed itaque suscipit aspernatur beatae doloribus, velit ipsa, expedita quia illum quos delectus optio asperiores.</p>
+						<p class="portfolio__text">Avocado Timer is a React app that allows users to store their avocados in the database and then sends users email notifications when their avocados are ripe. It is built on top of a Firebase database which is connected to a Heroku depo with an Express server running Node.js which sends emails using the SendGrid API.</p>
 					</div><!-- portfolio__description -->
 				</li><!-- portfolio__item -->
 				<li class="portfolio__item">
@@ -131,7 +154,7 @@
 					</div><!-- portfolio__image -->
 					<div class="portfolio__description">
 						<div class="item__title">
-							<h4>jQuery App - Nom deRBY</h4>
+							<h4>jQuery Application - Nom deRBY</h4>
 							<ul class="portfolio__tools">
 								<li class="portfolio__tool">
 									<p>JavaScript</p>
@@ -150,7 +173,7 @@
 								</li>
 							</ul>
 						</div>
-						<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod id cumque doloremque molestias quae obcaecati. Rem nulla repellendus laboriosam dignissimos explicabo necessitatibus nihil, tempore ipsa, doloremque laudantium amet ex aut!</p>
+						<p class="portfolio__text">A pair programming project, Nom deRBY is a jQuery app that will generate a roller derby nickname based off user inputs and a JSON database. I very much enjoyed working with a partner to build this application.</p>
 					</div><!-- portfolio__description -->
 				</li><!-- portfolio__item -->
 				<li class="portfolio__item">
@@ -163,7 +186,7 @@
 					</div><!-- portfolio__image -->
 					<div class="portfolio__description">
 						<div class="item__title">
-							<h4>ISS in the Sky</h4>
+							<h4>API Application - ISS in the Sky</h4>
 							<ul class="portfolio__tools">
 								<li class="portfolio__tool">
 									<p>JavaScript</p>
@@ -185,7 +208,7 @@
 								</li>
 							</ul>
 						</div>
-						<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus magni voluptate odio facere nesciunt fugit porro ad optio, nam reiciendis molestias et incidunt illo perspiciatis, nemo, laudantium perferendis vero! Cupiditate.</p>
+						<p class="portfolio__text">ISS in the Sky is a JavaScript app that uses the Open Notify and DarkSky APIs to serve the user with the weather for the next 5 times the International Space Station will be passing over their location at night.</p>
 					</div><!-- portfolio__description -->
 				</li><!-- portfolio__item -->
 				<li class="portfolio__item">
@@ -202,7 +225,7 @@
 					</div><!-- portfolio__image -->
 					<div class="portfolio__description">
 						<div class="item__title">
-							<h4>PSD Converstion - Soundbyte</h4>
+							<h4>PSD Conversion - Soundbyte</h4>
 							<ul class="portfolio__tools">
 								<li class="portfolio__tool">
 									<p>HTML5</p>
@@ -215,7 +238,7 @@
 								</li>
 							</ul>
 						</div>
-						<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim commodi possimus, atque culpa! Illo inventore, iure pariatur sit veritatis recusandae nemo incidunt similique tenetur omnis ipsam, porro autem exercitationem!</p>
+						<p class="portfolio__text">A fully responsive website built from a provided PSD design. My first project built entirely using the BEM naming convention and focusing on using semantic elements for screen-reader accessibility.</p>
 					</div><!-- portfolio__description -->
 				</li><!-- portfolio__item -->
 				
@@ -278,7 +301,7 @@
 				</li>
 				<li class="skills__skill">
 					<i class="devicons devicons-sublime"></i>
-					<p>Subime</p>
+					<p>Sublime</p>
 				</li>
 			</ul>
 		</div><!-- wrapper -->

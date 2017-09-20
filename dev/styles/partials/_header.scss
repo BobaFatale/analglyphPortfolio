@@ -1,12 +1,12 @@
 header{
 	height: 98vh;
-	background: url('../../assets/dog.jpg');
+	background: url('../../assets/dogFilter.jpg');
 	background-size: cover;
 	background-position: center;
 }
 .splash{
 	height: 98vh;
-	padding: 40px 0 30px;
+	padding: 40px 5px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -28,6 +28,9 @@ header{
 		// justify-content: center;
 	}
 	@include respond-to("small") {
+		display: none;
+	}
+	@include respond-to("max-height: 572px") {
 		display: none;
 	}
 }
@@ -71,7 +74,7 @@ header{
 	}
 	a{
 		text-decoration: none;
-		color: rgb(36, 36, 36);
+		color: black;
 		transition: all 0.2s ease-in;
 		&:hover{
 			color: white;
@@ -80,6 +83,7 @@ header{
 }
 .nav__link--active{
 	position: relative;
+	transition: all 0.3s ease-in;
 	&::before{
 		content: '';
 		width: 30px;
@@ -165,6 +169,9 @@ header{
 	align-items: center;
 	flex-wrap: wrap;
 	@include respond-to("small") {
+		display: none;
+	}
+	@include respond-to("max-height: 753px") {
 		display: none;
 	}
 	a{

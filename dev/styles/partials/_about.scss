@@ -47,6 +47,9 @@
 	bottom: 30px;
 	left: 100px;
 	right: 100px;
+	@include respond-to("large") {
+		display: none;
+	}
 }
 .profile__link{
 	display: flex;
@@ -71,13 +74,17 @@
 	font-size: 1.8rem;
 	line-height: 30px;/* Approximation due to font substitution */
 	text-align: left;
-	color: rgb(183, 183, 183);
+	color: rgb(99, 99, 99);
 	@include respond-to("medium") {
 		width: 80%;
 	}
 	p:first-of-type{
-		font-weight: 700;
+		// font-weight: 700;
 		color: rgb(37, 37, 37);
 		margin-bottom: 30px;
+	}
+	em{
+		font-style: normal;
+		font-weight: 700;
 	}
 }

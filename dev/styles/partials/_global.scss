@@ -97,4 +97,142 @@ body{
 section{
 	padding-top:75px;
 	padding-bottom: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.hamburgerNav{
+	display: none;
+	background: $titleBlack;
+	position: fixed;
+	z-index: 20;
+	width: 40%;
+	right: -40%;
+	top:0;
+	height: 100%;
+	transition: all 0.5s;
+	.hamLinks{
+		display: block;
+		margin-left: 30px;
+	}
+	.hamLinks__link{
+		padding: 20px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		a{
+			font-size: 2.4rem;
+			color: white;
+			text-decoration: none;
+			&:hover{
+				color: $mainBlue;
+			}
+		}
+	}
+	@include respond-to("small") {
+		display: block;
+	}
+	@include respond-to("max-height: 572px") {
+		display: block;
+	}
+}
+.hamburgerNav__label{
+	background-color: $titleBlack;
+	font-size: 2.4rem;
+	text-align: center;
+	display: block;
+	// padding: 18px 24px;
+  border-radius: 50%;
+  position: relative;
+  right: 60px;
+  top: 40px;
+
+	height: 100px;
+	width: 100px;
+}
+#hamToggle{
+	display: none;
+}
+#hamToggle:checked + .hamburgerNav {
+	right: 0; 
+}
+.hamLabel__container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 100px;
+	height: 100px;
+}
+
+// hamburger icon code stolen from https://codepen.io/designcouch/pen/Atyop
+.hamburgerNav__icon{
+  width: 60px;
+  height: 45px;
+	position: relative;
+  // margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.hamburgerNav__icon span{
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: white;
+  box-shadow: -2px 0 $mainRed, 2px 0 $mainBlue;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.hamburgerNav__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburgerNav__icon span:nth-child(2),.hamburgerNav__icon span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburgerNav__icon span:nth-child(4) {
+  top: 36px;
+}
+
+.hamburgerNav__icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburgerNav__icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburgerNav__icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburgerNav__icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }

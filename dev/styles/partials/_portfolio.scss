@@ -12,12 +12,13 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	margin-bottom: 150px;
 	@include respond-to("large") {
 		flex-direction: column;
 		justify-content: center;
+		align-items: flex-end;
 	}
 	&:nth-of-type(odd){
 		@include respond-to("large") {
@@ -37,11 +38,14 @@
 			.portfolio__tools{
 				justify-content: flex-start;
 			}
+			.portfolio__tool{
+				margin-right: 20px;
+				margin-left: 0;
+			}
 		}
 	}
 }
 .portfolio__image{
-	// width: calc( ( 100% - 50px ) / 2);
 	width: calc(55% - 30px);
 	@include respond-to("large") {
 		width: 100%;
@@ -152,21 +156,15 @@
 	border: 2px solid rgb(183, 183, 183);
 	margin-top: 10px;
 	margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
 	padding: 0 10px;
-	&:first-of-type{
-		// margin-left: 0;
-	}
-	&:last-of-type{
-		// margin-right: 0;
-	}
 }
 .portfolio__text{
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 24px;/* Approximation due to font substitution */
 	color: rgb(183, 183, 183);
-	margin-right: 10px;
-	margin-left: 10px;
+}
+.item__title{
+	margin-bottom: 30px;
 }
